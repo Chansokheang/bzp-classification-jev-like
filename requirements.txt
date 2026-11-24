@@ -1,0 +1,6 @@
+# Local data preparation and baselines (prep/*.py). Training needs requirements-train.txt.
+pandas
+numpy
+pyarrow
+openpyxl
+scikit-learn

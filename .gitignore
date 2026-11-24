@@ -1,0 +1,39 @@
+# --- Company data: never commit (real transactions, merchant names) ---
+data/raw/
+data/prepared/
+data/jev/
+*.xlsx
+*.parquet
+*.jsonl
+
+# --- Training outputs and checkpoints ---
+runs/
+*.pt
+*.pth
+*.safetensors
+*.bin
+# keep baseline reports, drop row-level dumps (already covered by *.parquet)
+results/**/*.jsonl
+
+# --- Hugging Face / model caches ---
+.cache/
+hf_cache/
+models/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.xlsx

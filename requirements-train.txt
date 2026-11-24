@@ -1,0 +1,9 @@
+# GPU server requirements for train.py
+# Install PyTorch first with the CUDA build matching your driver, e.g.
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch>=2.4
+# Tested with 4.56.2. The custom 4D attention mask relies on transformers' mask handling,
+# so re-run tests/test_model.py if you change this version.
+transformers==4.56.2
+numpy
+pytest
